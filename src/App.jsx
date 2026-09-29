@@ -5,12 +5,24 @@ import StudentList from "./StudentList";
 function App() {
   return (
     <div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <ProductCard title="Laptop" price={850} category="Electronics" />
-        <ProductCard title="Running Shoes" price={60} category="Sports" />
+      <h1 style={{ textAlign: "center", color: "#222" }}>My React App</h1>
+
+      <div className="section">
+        <h2>Products</h2>
+        <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
+          <ProductCard title="Laptop" price={850} category="Electronics" />
+          <ProductCard title="Running Shoes" price={60} category="Sports" />
+        </div>
       </div>
-      <LikeButton />
-      <StudentList />
+
+      <div className="section">
+        <LikeButton />
+      </div>
+
+      <div className="section">
+        <h2>Students</h2>
+        <StudentList />
+      </div>
     </div>
   );
 }
