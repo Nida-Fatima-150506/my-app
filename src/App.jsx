@@ -1,5 +1,6 @@
 import ProductCard from "./ProductCard";
 import LikeButton from "./LikeButton";
+import StudentList from "./StudentList";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <ProductCard title="Running Shoes" price={60} category="Sports" />
       </div>
       <LikeButton />
+      <StudentList />
     </div>
   );
 }
